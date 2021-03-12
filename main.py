@@ -14,9 +14,13 @@ def get_current_word():
 
 
 # A few phrases that need not be considered for synonym check.
-auxillary_phrases = ['is', 'am', 'are', 'has', 'have', 'had', 'been', 'was',
+auxillary_phrases = {'is', 'am', 'are', 'has', 'have', 'had', 'been', 'was',
 'would', 'should', 'shall', 'may', 'might', 'a', 'an', 'the', 'you', 'we',
-'i','of']
+'i', 'of', 'will', 'us', 'and'}
+
+
+# Welcome statement
+print("Hey, I am Thesaurus! \nYou can start typing (not in the terminal) and I will display the resp. synonyms here!")
 
 
 while True:
@@ -39,5 +43,4 @@ while True:
             print()
 
         else:
-            print(f"Sorry, nothing matched for '{word}'")
-            print()
+            print(f"Sorry, nothing matched for '{word}'\n")
